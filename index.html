@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aman Kumar | Portfolio</title>
+<meta name="description" content="Aman Kumar: student builder, open-source contributor, and fitness-app developer.">
+<style>
+:root{--bg:#0b1020;--card:#141b34;--tx:#e8ecf8;--mut:#9aa6c8;--ac:#ff9900;--ac2:#38bdf8;--bd:#25305a}
+@media (prefers-color-scheme:light){:root{--bg:#f5f7fc;--card:#fff;--tx:#10162b;--mut:#51608a;--ac:#c26a00;--ac2:#0369a1;--bd:#d5dcf0}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx)}
+a{color:var(--ac2)}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--bd);display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:space-between;padding:10px 20px}
+header b{color:var(--ac)}nav{display:flex;flex-wrap:wrap;gap:14px}nav a{text-decoration:none;color:var(--tx);font-size:15px}nav a:hover{color:var(--ac)}
+section{max-width:900px;margin:0 auto;padding:56px 20px 8px}
+h1{font-size:clamp(2rem,6vw,3.2rem);margin:.2em 0}h2{color:var(--ac);border-bottom:1px solid var(--bd);padding-bottom:6px}
+.hero p{color:var(--mut);max-width:620px}
+.btn{display:inline-block;background:var(--ac);color:#111;font-weight:600;padding:9px 18px;border-radius:8px;text-decoration:none;margin:4px 6px 4px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px}
+.card h3{margin:.1em 0 .3em}.tag{display:inline-block;font-size:12px;border:1px solid var(--bd);border-radius:99px;padding:1px 9px;margin:2px 3px 2px 0;color:var(--mut)}
+.bar{height:8px;background:var(--bd);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--ac),var(--ac2))}
+.hint{display:inline-flex;gap:8px;align-items:center;margin-top:14px;padding:8px 14px;border:1px dashed var(--ac);border-radius:8px;color:var(--ac);text-decoration:none;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 6px rgba(255,153,0,.2)}}
+@media (prefers-reduced-motion:reduce){.hint{animation:none}}
+#term{background:#05070f;color:#b6f7c1;border:1px solid var(--bd);border-radius:12px;font:14px/1.5 ui-monospace,Menlo,Consolas,monospace;padding:14px;height:320px;overflow:auto}
+#term .o{white-space:pre-wrap;margin:0}#term .p{color:#ff9900}
+#row{display:flex;gap:8px;margin-top:6px}#in{flex:1;background:transparent;border:0;outline:0;color:#fff;font:inherit;min-width:0}
+.chips button{background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:99px;padding:4px 12px;margin:4px 4px 0 0;cursor:pointer}
+footer{text-align:center;color:var(--mut);padding:40px 20px;font-size:14px}
+</style>
+</head>
+<body>
+<header><b>aman.kumar</b>
+<nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#secret">Terminal</a><a href="#contact">Contact</a></nav></header>
+
+<section class="hero" id="top">
+<p style="color:var(--ac)">Hi, I'm</p>
+<h1>Aman Kumar</h1>
+<p>A student builder who learns by shipping: team hackathon apps, open-source pull requests, and cloud deployments on AWS.</p>
+<a class="btn" href="#projects">See my work</a><a class="btn" href="#contact" style="background:transparent;color:var(--tx);border:1px solid var(--bd)">Get in touch</a><br>
+<a class="hint" href="#secret">&#9654; Psst... there's a hidden terminal. Type <code>secret</code> in it.</a>
+</section>
+
+<section id="about"><h2>About Me</h2>
+<p>I'm a university student at Galgotia University who likes turning ideas into working software. This year I built a fitness tracking web app with my team, took part in Hacktoberfest by contributing to the open-source Kestra project, and wrote about the experience for the DEV community.</p>
+<p>I'm now learning cloud skills on AWS, and this portfolio is hosted with AWS Amplify as part of the AWS Student Builder Challenge.</p></section>
+
+<section id="skills"><h2>Tech Superpowers</h2>
+<div class="grid">
+<div class="card"><h3>Web Development</h3><div class="bar"><i style="width:75%"></i></div><p>HTML, CSS, JavaScript and building responsive interfaces.</p></div>
+<div class="card"><h3>Open Source</h3><div class="bar"><i style="width:60%"></i></div><p>Reading unfamiliar codebases, using Git and GitHub, and sending pull requests (TypeScript).</p></div>
+<div class="card"><h3>Cloud (AWS)</h3><div class="bar"><i style="width:45%"></i></div><p>Deploying and hosting with AWS Amplify. Still levelling up.</p></div>
+<div class="card"><h3>Teamwork &amp; Communication</h3><div class="bar"><i style="width:80%"></i></div><p>Hackathon teamwork, presentation decks, and technical write-ups.</p></div>
+</div></section>
+
+<section id="projects"><h2>Projects &amp; Achievements</h2>
+<div class="grid">
+<div class="card"><h3>Online Fitness Tracking App</h3><span class="tag">Team project</span><span class="tag">GUVI Hackathon</span>
+<p>A web app with login, a dashboard (including a step-goal streak), a daily activity log, workouts and settings. Built with Himanshu Rana and Aditya Deol.</p></div>
+<div class="card"><h3>Kestra &times; Hacktoberfest</h3><span class="tag">Open source</span><span class="tag">TypeScript</span>
+<p>Picked a good-first-issue in kestra-io/kestra: replacing explicit <code>any</code> types in two spec files to improve type safety.</p></div>
+<div class="card"><h3>DEV Hacktoberfest Challenge</h3><span class="tag">Writing</span>
+<p>Entered the weekly DEV Open-Source AI Challenge, sharing what I learned while contributing.</p></div>
+<div class="card"><h3>This Portfolio</h3><span class="tag">AWS Amplify</span><span class="tag">GitHub</span>
+<p>Static site with an interactive terminal, deployed through AWS Amplify Hosting with continuous deploys from GitHub.</p></div>
+</div></section>
+
+<section id="secret"><h2>&#9000; Hidden Terminal</h2>
+<p style="color:var(--mut)">Explore my portfolio the nerdy way. Tap a command or type it.</p>
+<div id="term" role="log" aria-live="polite"></div>
+<div id="row"><span class="p" style="font:14px ui-monospace,monospace">guest@aman:~$</span><input id="in" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command"></div>
+<div class="chips" id="chips"></div></section>
+
+<section id="contact"><h2>Contact</h2>
+<p>Want to collaborate or chat? Find me on <a href="https://github.com/" rel="noopener">GitHub</a> or <a href="https://dev.to/" rel="noopener">DEV</a>. <em>(Replace these links with your own profiles.)</em></p></section>
+
+<footer>&copy; 2026 Aman Kumar &middot; Hosted on AWS Amplify</footer>
+
+<script>
+(function(){
+var T=document.getElementById('term'),I=document.getElementById('in'),C=document.getElementById('chips');
+var cmds={
+help:"Commands: about, skills, projects, superpower, secret, theme, clear, help",
+about:"Aman Kumar. Student builder at Galgotia University. Ships hackathon apps, open-source PRs and AWS deployments.",
+skills:"Web dev [#######---]\nOpen source [######----]\nAWS cloud [####------]\nTeamwork [########--]",
+projects:"1. Online Fitness Tracking App (team hackathon)\n2. Kestra x Hacktoberfest contribution\n3. DEV Hacktoberfest challenge posts\n4. This portfolio on AWS Amplify",
+superpower:null,
+secret:"You found it! My motto: ship small, learn fast, repeat. Thanks for exploring.",
+theme:null};
+var powers=["Turning confusing codebases into small, safe pull requests.","Explaining technical ideas in plain language.","Shipping a working demo before the deadline.","Learning a new tool in a weekend."];
+function out(t,c){var p=document.createElement('p');p.className='o';if(c)p.style.color=c;p.textContent=t;T.appendChild(p);T.scrollTop=T.scrollHeight}
+function run(v){v=v.trim().toLowerCase();if(!v)return;out('$ '+v,'#ff9900');
+if(v==='clear'){T.innerHTML='';return}
+if(v==='superpower'){out('Superpower unlocked: '+powers[Math.floor(Math.random()*powers.length)]);return}
+if(v==='theme'){var d=document.documentElement.style;var neon=d.getPropertyValue('--ac')==='#ff2ec4';
+d.setProperty('--ac',neon?'':'#ff2ec4');d.setProperty('--ac2',neon?'':'#00f0ff');d.setProperty('--bg',neon?'':'#0a0014');
+out(neon?'Theme reset.':'Neon mode on. Run theme again to reset.');return}
+out(cmds[v]||"Command not found: "+v+". Try 'help'.")}
+I.addEventListener('keydown',function(e){if(e.key==='Enter'){run(I.value);I.value=''}});
+['help','about','skills','projects','superpower','secret','theme'].forEach(function(c){var b=document.createElement('button');b.textContent=c;b.onclick=function(){run(c)};C.appendChild(b)});
+out("Welcome to Aman's terminal. Type 'help' to begin.");
+})();
+</script>
+</body>
+</html>
